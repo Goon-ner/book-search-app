@@ -73,3 +73,7 @@
 .bookImg {
   max-width: 100%;
 }
+h1 {
+  display: block;
+  margin: 30px auto;
+}

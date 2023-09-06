@@ -11,7 +11,7 @@ function App() {
     setSearchTerm(`?q=orderBy=${item}`, setSort(item))
   }
   const searchBook = (text) => setSearchTerm(`?q=${text + '&'}orderBy=${sort}`)
-  console.log(searchTerm)
+
   return (
     <BrowserRouter>
       <div className="App">

@@ -1,0 +1,75 @@
+@media (min-width: 1280px) {
+  .booksPage {
+    color: rgb(0, 0, 0);
+    display: block;
+    max-width: 80%;
+    margin-left: 10%;
+  }
+  .singleBook {
+    color: black;
+    max-width: 27%;
+    min-width: 27%;
+    padding: 10px;
+    margin: 10px 15px;
+    background-color: rgba(255, 235, 205, 0.568);
+  }
+}
+@media (min-width: 950px) and (max-width: 1279px) {
+  .booksPage {
+    color: rgb(0, 0, 0);
+    display: block;
+    max-width: 95%;
+    margin: 10px 2.5%;
+  }
+  .singleBook {
+    color: black;
+    max-width: 31%;
+    min-width: 31%;
+    justify-content: space-between;
+    margin: 5px;
+    background-color: rgba(255, 235, 205, 0.568);
+  }
+}
+@media (min-width: 650px) and (max-width: 949px) {
+  .booksPage {
+    color: rgb(0, 0, 0);
+    display: block;
+    max-width: 95%;
+    margin: 10px 2.5%;
+  }
+  .singleBook {
+    color: black;
+    max-width: 45%;
+    min-width: 45%;
+    justify-content: space-between;
+    margin: 5px;
+    background-color: rgba(255, 235, 205, 0.568);
+  }
+}
+@media (max-width: 649px) {
+  .booksPage {
+    color: rgb(0, 0, 0);
+    display: block;
+    max-width: 95%;
+    margin: 10px 2.5%;
+  }
+  .singleBook {
+    color: black;
+    max-width: 95%;
+    min-width: 95%;
+    justify-content: space-between;
+    margin: 5px;
+    background-color: rgba(255, 235, 205, 0.568);
+  }
+}
+
+.books {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  justify-content: space-between;
+}
+
+.bookImg {
+  max-width: 100%;
+}

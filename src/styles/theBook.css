@@ -1,0 +1,97 @@
+@media (min-width: 1280px) {
+  .theBookPage {
+    max-width: 70%;
+    margin: 25px auto;
+  }
+  .book {
+    display: flex;
+    justify-content: space-between;
+  }
+  .description {
+    display: block;
+    font-size: 20px;
+    padding: 15px;
+    margin-top: 25px;
+    max-width: 45%;
+    margin-bottom: 25px;
+  }
+  .bookImg {
+    max-width: 45%;
+    min-width: 45%;
+    margin-bottom: 25px;
+  }
+  .bookImage {
+    min-width: 100%;
+    margin: 40px auto;
+  }
+}
+@media (min-width: 950px) and (max-width: 1279px) {
+  .theBookPage {
+    max-width: 90%;
+    margin: 25px auto;
+  }
+  .book {
+    display: flex;
+    justify-content: space-between;
+  }
+  .description {
+    display: block;
+    font-size: 20px;
+    padding: 15px;
+    margin-top: 25px;
+    max-width: 45%;
+    margin-bottom: 25px;
+  }
+  .bookImg {
+    max-width: 45%;
+    min-width: 45%;
+    margin-bottom: 25px;
+  }
+  .bookImage {
+    min-width: 100%;
+    margin: 40px auto;
+  }
+}
+@media (min-width: 320px) and (max-width: 949px) {
+  .theBookPage {
+    max-width: 80%;
+    margin: 25px auto;
+  }
+  .book {
+    display: block;
+    margin: 25px auto;
+    max-width: 100%;
+  }
+  .description {
+    display: block;
+    padding: 15px;
+    margin: 25px auto;
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+  .bookText {
+    min-width: 100%;
+    font-size: 24px;
+  }
+  .bookImg {
+    max-width: 100%;
+    min-width: 100%;
+    margin-bottom: 25px;
+  }
+  .bookImage {
+    min-width: 100%;
+  }
+}
+.bookTitle {
+  max-width: 70%;
+  margin: 10px auto;
+  padding-top: 30px;
+}
+.linkReturn {
+  display: flex;
+  max-width: 130px;
+}
+.linkReturn:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}

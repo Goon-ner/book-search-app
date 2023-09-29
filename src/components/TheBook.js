@@ -5,12 +5,14 @@ import returnIcon from '../icons/left.png'
 
 const TheBook = () => {
   const params = useParams()
-  const theBook = useFetch('/' + params.bookId)
+  const { data, isLoading } = useFetch(`/${params.bookId}`)
+  console.log(data)
+  if (isLoading) return <h1>Loading...</h1>
 
   return (
     <div className="theBookPage">
-      <h1 className="bookTitle">{theBook.data.volumeInfo.title}</h1>
-      <h2 className="bookAuthor">{theBook.data.volumeInfo.authors}</h2>
+      <h1 className="bookTitle">{data.volumeInfo.title}</h1>
+      <h2 className="bookAuthor">{data.volumeInfo.authors}</h2>
       <NavLink to={'/'} className="linkReturn">
         <img className="returnIcon" alt="returnIcon" src={returnIcon} />
       </NavLink>
@@ -18,15 +20,13 @@ const TheBook = () => {
         <div className="bookImg">
           <img
             className="bookImage"
-            src={theBook.data.volumeInfo.imageLinks.thumbnail}
-            title={theBook.data.volumeInfo.title}
-            alt={theBook.data.id}
+            src={data.volumeInfo.imageLinks.thumbnail}
+            title={data.volumeInfo.title}
+            alt={data.id}
           />
         </div>
         <div className="description">
-          <text className="bookText">
-            {theBook.data.volumeInfo.description}
-          </text>
+          <div className="bookText">{data.volumeInfo.description}</div>
         </div>
       </div>
     </div>
